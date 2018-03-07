@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="gameTitle">
+    <text class="game-title">{{title}}</text>
+  </view>
+  <view>
+    <image style="width: 200px; height: 200px; background-color: #eeeeee;margin-top:5px;" mode="scaleToFill" src="../../images/cat.jpg"></image>
+  </view>
+  <view class="gameButton">
+    <button bindtap="startGame"> 开始游戏 </button>
+  </view>
+    
+</view>

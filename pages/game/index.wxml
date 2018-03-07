@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container" bindtouchmove="handletouchmove" bindtouchend="handletouchend" bindtouchstart="handletouchtart">
+    <view>
+      <button bindtap="replay"> {{again}} </button>
+    </view>
+    <view class="jigsaw">
+      <view class="item" wx:for="{{d}}" wx:key="*this">
+        <image style="width: 100px; height: 100px; background-color: #eeeeee;" mode="scaleToFill" src="../../images/dingdang/dingdang_{{item}}.jpg"></image>
+      </view>
+    </view>
+    <!--弹出框-->
+    <modal title=""
+     hidden="{{hiddenModal}}"
+     confirm-text="再来一局"
+     bindconfirm="replay"
+     no-cancel="true">
+     恭喜你！拼图成功
+     </modal>
+</view>

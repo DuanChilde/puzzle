@@ -1,0 +1,11 @@
+/**index.wxss**/
+.game-title {
+  color: #aaa;
+}
+
+.gameTitle {
+  margin-top: 5px;
+}
+.gameButton{
+  margin-top: 100px;
+}
